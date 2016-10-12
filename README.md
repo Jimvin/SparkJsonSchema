@@ -1,7 +1,5 @@
-
-
-
-
+# SparkJsonSchema
+This repo contains an example of how you can take text files containing fixed-width and read them as Spark DataFrames based on a JSON schema definition file. This is useful for keeping the table definitions out of your code and provide a generic framework for processing files with different formats.
 
 ## Building
 This example uses the spark-fixedwidth library from Quartet Health, which is based on databricks-spark-csv:
