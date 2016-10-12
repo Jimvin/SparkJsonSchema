@@ -1,0 +1,13 @@
+{
+  "columns": [
+    {"columnName": "id", "columnType": "Integer", "columnWidth": "5"},
+    {"columnName": "firstName", "columnType": "String", "columnWidth": "10"},
+    {"columnName": "lastName", "columnType": "String", "columnWidth": "10"},
+    {"columnName": "gender", "columnType": "String", "columnWidth": "1"},
+    {"columnName": "dateOfBirth", "columnType": "String", "columnWidth": "10"}
+  ],
+
+  "tableName": "people",
+  "comment": "This is a test fixed-width field table",
+  "partition": "partition_spec_goes_here"
+}
