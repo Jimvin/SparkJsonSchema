@@ -26,6 +26,8 @@ object JsonSchemaExample {
 //    val jsonSchema = "file:///home/cloudera/fixed-width/data/new_schema.json"
     val jsonSchema = args(1)
 
+    val outputDir = args(2)
+
     // Load JSON schema from file
     val jsonString = sc.wholeTextFiles(jsonSchema).first._2
 
@@ -50,6 +52,6 @@ object JsonSchemaExample {
         useHeader = false
       )
 
-    result.write.parquet("/user/cloudera/data/" + tableName)
+    result.write.parquet(outputDir + "/" + tableName)
   }
 }
